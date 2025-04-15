@@ -27,7 +27,7 @@ interface PlayerState {
   flattened_nodes: Map<string, Point>;
 }
 
-let config: Config = { pathCost: 2, factoryCost: 5, startingEnergy: 100 };
+let config: Config = { pathCost: 2, factoryCost: 5, startingEnergy: 10 };
 
 export class App {
   #red: PlayerState = { energy: 0, network: new Point("", false), flattened_nodes: new Map() };
