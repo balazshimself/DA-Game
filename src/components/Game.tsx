@@ -37,6 +37,13 @@ export function Game() {
         <button
           id="resetGame"
           className="px-4 py-2 bg-slate-600 hover:bg-slate-700 rounded-lg font-medium transition-colors"
+          onClick={() => {
+            console.log('starting a new game!');
+            if (svgRef.current) {
+              app = new App();
+              app.initGame(svgRef.current);
+            }
+          }}
         >
           Reset Game
         </button>
